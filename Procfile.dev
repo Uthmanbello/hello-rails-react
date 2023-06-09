@@ -1,2 +1,2 @@
-web: unset PORT && bin/rails server
+web: set PORT= && ruby "C:\Users\De Royale\OneDrive\Desktop\Microverse\Module_6\hello-rails-react\bin\rails" server
 js: yarn build --watch
