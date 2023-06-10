@@ -48,10 +48,9 @@ export const setRandomGreeting = (greeting) => ({
 });
 
 export const getRandomGreeting = () => (dispatch) => {
-  axios.get('http://localhost:3000/greeting')
+  axios.get('/random_greeting')
     .then((response) => {
       dispatch(setRandomGreeting(response.data.greeting));
-      console.log(response.data.greeting)
     })
     .catch((error) => error);
 };

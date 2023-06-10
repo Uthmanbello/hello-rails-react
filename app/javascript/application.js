@@ -23,7 +23,6 @@ import rootReducer from './reducers/index';
 import App from './App';
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
-// const root = ReactDOM.createRoot(document.getElementById('root'));
 
 ReactDOM.render(
   <Provider store={store}>
